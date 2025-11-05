@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="GELATO ROOM公式Webサイト" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <!-- ファビコン -->
+        <link rel="icon" href="./images/favicon.ico" sizes="32x32" />
+        <link rel="icon" href="./images/logo.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="./images/apple-touch-icon.png" />
+        <!-- webフォント -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+
+        <link rel="stylesheet" type="text/css" href="./css/reset.css" />
+        <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="./css/common.css" />
+
+        <title>GELATO ROOM</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="header-flex">
+                <h1>
+                    <a href="index.html"><img src="./images/logo_GELATO-ROOM.png" alt="GELATO ROOM" /></a>
+                </h1>
+
+                <nav id="gloval-nav">
+                    <ul>
+                        <li>
+                            <a href="#about">ABOUT</a>
+                        </li>
+                        <li>
+                            <a href="#menu">MENU</a>
+                        </li>
+                        <li>
+                            <a href="#access">ACCESS</a>
+                        </li>
+                        <li>
+                            <a href="#news">NEWS</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="header">
+                <button class="hamburger-grid" aria-label="メニュー" aria-controls="grid-menu" aria-expanded="false">
+                    <div class="hamburger-grid__dots">
+                        <span class="hamburger-grid__dot"></span>
+                        <span class="hamburger-grid__dot"></span>
+                        <span class="hamburger-grid__dot"></span>
+                        <span class="hamburger-grid__dot"></span>
+                        <span class="hamburger-grid__dot"></span>
+                        <span class="hamburger-grid__dot"></span>
+                        <span class="hamburger-grid__dot"></span>
+                        <span class="hamburger-grid__dot"></span>
+                        <span class="hamburger-grid__dot"></span>
+                    </div>
+                </button>
+
+                <nav id="grid-menu" class="nav-grid" aria-hidden="true">
+                    <div class="nav-grid__content">
+                        <div class="nav-grid__section">
+                            <ul class="nav-grid__list">
+                                <li><a href="./index.html" class="nav-grid__link">HOME</a></li>
+                                <li><a href="#about" class="nav-grid__link">ABOUT</a></li>
+                                <li><a href="#menu" class="nav-grid__link">MENU</a></li>
+                                <li><a href="#access" class="nav-grid__link">ACCESS</a></li>
+                                <li><a href="#news" class="nav-grid__link">NEWS</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <div id="blue_bg"></div>
+            <div id="blue_bg_text">
+                <p>
+                    からだに良くて、<br />
+                    美味しい
+                </p>
+            </div>
+        </header>
+
+        <main>
+            <!-- ABOUT -->
+            <section class="about_area" id="about">
+                <div class="about_left">
+                    <div class="contents_title">
+                        <h2>ABOUT</h2>
+                    </div>
+
+                    <div class="about_text">
+                        <p>GELATO ROOMは、ひと口で思わず笑顔になるようなジェラートを目指しています。毎日お店で手作りするフレーバーは、厳選した素材をたっぷり使い、濃厚なのに後味はさっぱり。「今日はどの味にしよう？」とワクワクしながら選んでもらえるように、季節ごとに新しいフレーバーもご用意しています。明るいブルーとオレンジを基調にした店内は、写真映えもばっちり。友達とのカフェタイムや学校帰りの寄り道に、気軽に立ち寄れるジェラートショップです。</p>
+                    </div>
+                </div>
+
+                <div class="about_right">
+                    <div class="img_left">
+                        <img src="./images/about_01.jpg" alt="ジェラート" />
+                    </div>
+                    <div class="img_right">
+                        <img src="./images/about_02.jpg" alt="ジェラート" />
+                    </div>
+                </div>
+            </section>
+
+            <!-- MENU -->
+            <section class="menu_area" id="menu">
+                <div class="menu_bg">
+                    <p class="menu_text">旬をぎゅっと閉じ込めたフルーツとミルクのハーモニーから生まれる、ここだけのジェラート</p>
+
+                    <div class="menu_title">
+                        <div class="contents_title">
+                            <h2>MENU</h2>
+                        </div>
+
+                        <div class="read_button">
+                            <a href="#">READ MORE</a>
+                        </div>
+                    </div>
+
+                    <!-- スライドショー -->
+                    <div class="splide" aria-label="カード型スライダー">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <div class="card">
+                                        <img src="./images/menu_01.jpg" alt="ジェラート" />
+                                        <div class="card-content">
+                                            <h3>ブルーベリーヨーグルト</h3>
+                                            <p>&yen;650</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="card">
+                                        <img src="./images/menu_02.jpg" alt="ジェラート" />
+                                        <div class="card-content">
+                                            <h3>ストロベリーミルク</h3>
+                                            <p>&yen;580</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="card">
+                                        <img src="./images/menu_03.jpg" alt="ジェラート" />
+                                        <div class="card-content">
+                                            <h3>チョコクランチ</h3>
+                                            <p>&yen;550</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="card">
+                                        <img src="./images/menu_04.jpg" alt="ジェラート" />
+                                        <div class="card-content">
+                                            <h3>ダブルベリー</h3>
+                                            <p>&yen;600</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="card">
+                                        <img src="./images/menu_05.jpg" alt="ジェラート" />
+                                        <div class="card-content">
+                                            <h3>塩バニラ</h3>
+                                            <p>&yen;500</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="card">
+                                        <img src="./images/menu_06.jpg" alt="ジェラート" />
+                                        <div class="card-content">
+                                            <h3>ピスタチオ</h3>
+                                            <p>&yen;550</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="card">
+                                        <img src="./images/menu_07.jpg" alt="ジェラート" />
+                                        <div class="card-content">
+                                            <h3>レモンソーダ</h3>
+                                            <p>&yen;620</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="card">
+                                        <img src="./images/menu_08.jpg" alt="ジェラート" />
+                                        <div class="card-content">
+                                            <h3>キャラメルナッツ</h3>
+                                            <p>&yen;670</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ACCESS -->
+            <section class="shop_area" id="access">
+                <div class="shop_wrap">
+                    <div class="contents_title">
+                        <h2>ACCESS</h2>
+                    </div>
+
+                    <div class="shop_contents">
+                        <div class="line_up">
+                            <img src="./images/logo_GELATO-ROOM.png" alt="GELATO-ROOM" />
+                        </div>
+
+                        <div class="flex_shop">
+                            <div class="slide_shop">
+                                <img src="./images/shop_01.jpg" alt="店舗外観" />
+                            </div>
+                            <div class="shop_address">
+                                <div class="shop_text">
+                                    <div>
+                                        <p>営業時間</p>
+                                    </div>
+                                    <div>
+                                        <p>09:00 ~ 20:00</p>
+                                    </div>
+                                    <div>
+                                        <p>定休日</p>
+                                    </div>
+                                    <div>
+                                        <p>水曜日</p>
+                                    </div>
+                                    <div>
+                                        <p>住所</p>
+                                    </div>
+                                    <div>
+                                        <p>愛知県名古屋市1-2-3</p>
+                                    </div>
+                                    <div>
+                                        <p>電話番号</p>
+                                    </div>
+                                    <div>
+                                        <p>00-0000-000</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- NEWS -->
+            <section class="news_area" id="news">
+                <div class="news_title">
+                    <div class="contents_title">
+                        <h2>NEWS</h2>
+                    </div>
+
+                    <div class="read_button">
+                        <a href="#">READ MORE</a>
+                    </div>
+                </div>
+
+                <div class="news_contents">
+                    <div>
+                        <a href="#">
+                            <img src="./images/news_01.jpg" alt="ジェラート50円引き" />
+                            <h3>2025/09/25</h3>
+                            <p>ジェラート50円引きでご提供中</p>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="#">
+                            <img src="./images/news_02.jpg" alt="今週限定キャンペーン" />
+                            <h3>2025/09/07</h3>
+                            <p>今週限定キャンペーン</p>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="#">
+                            <img src="./images/news_03.jpg" alt="プレミアムジェラート" />
+                            <h3>2025/08/15</h3>
+                            <p>プレミアムジェラート発売</p>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="#">
+                            <img src="./images/news_04.jpg" alt="試食会のお知らせ" />
+                            <h3>2025/08/01</h3>
+                            <p>試食会のお知らせ</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer_nav">
+                <div class="icon">
+                    <div>
+                        <a href="#"><img src="./images/x_icon.png" alt="X" /></a>
+                    </div>
+
+                    <div>
+                        <a href="#"><img src="./images/instagram_icon.png" alt="instagram" /></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copy">
+                <p>&copy; GELATO-ROOM 2025</p>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+        <script type="text/javascript" src="./js/index.js"></script>
+    </body>
+</html>
